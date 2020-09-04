@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let us consider the array name be avengers with 6 elements
+        let avengers=["Black widow","Thor","Iron Man","Captain America","Hawkeye","Hulk"];
+      
+        //let us find whether character 'a' is in strings of  this array
+        console.log("'a' is present in below strings")
+        avengers.forEach(function(val)
+        {
+            if(val.includes("a"))
+                {
+                    console.log(val);
+                }
+                //or we can use this method /*for(i=0;i<val.length;i++){if(val[i]=="a"){console.log(val);break;}}*/
+        })
+    </script>
+</body>
+</html>
