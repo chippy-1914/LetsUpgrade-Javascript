@@ -1,0 +1,51 @@
+<!--Webpage containing image and three buttons -- onclick(second)=new image onclick(third button)= new image 
+    onclick(first)=First image-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:rgb(255, 72, 0);
+            
+        }
+        .one_line{
+            justify-content: space-between;
+            display:flex;
+        }
+        button {
+            width:20%;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="one_line">
+    <button onclick="first_picture()">Go back to first picture</button>
+    <button onclick="second_picture()">New picture</button>
+    <button onclick="third_picture()">Change picture</button>
+    </div>
+    <br/>
+    <img src="one.jpg" style="align-content: center; width:50%;height:500px;display:block; margin:auto auto;" >
+    <script>
+        function first_picture(){
+    let temp1=document.getElementsByTagName("img");
+    let temp2="one.jpg";
+    temp1[0].src=temp2;
+}
+function second_picture(){
+    let temp1=document.getElementsByTagName("img");
+    let temp2="two.jpg";
+    temp1[0].src=temp2;
+}
+function third_picture(){
+    let temp1=document.getElementsByTagName("img");
+    let temp2="three.jpg";
+    temp1[0].src=temp2;
+}
+
+    </script>
+</body>
+</html>
