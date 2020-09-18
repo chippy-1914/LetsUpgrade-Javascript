@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+    .block1{
+        width:70%;
+        margin:auto auto;
+        background-color:bisque;
+        height:500px;
+        padding:20px;
+        text-align:center;
+    }
+    table {
+        width:100%;
+        margin:auto auto;
+        text-align:center;
+    }
+    th,td {
+        height:20px;
+        padding:5px;
+    }
+    .form {
+        height:80px;
+        margin-bottom: 15px;
+    }
+    </style>
+</head>
+<body>
+    <div class="block1">
+        <h1>Bus</h1>
+        <br>
+        <div class="form">
+            <input type="text" placeholder="Name" id="addname">
+            <input type="text" placeholder="Source" id="addsource">
+            <input type="text" placeholder="Destination" id="adddestination">
+            <input type="text" placeholder="Number" id="addnumber">
+            <input type="text" placeholder="Passenger Capacity" id="addpassenger"><br>
+            <button onclick="addbus(event)" style="margin-top:5px;">Add New Bus</button><br>
+            <input type="text" onkeyup="searchbus()" style="margin-top:10px; height:20px; width:250px;"  class="search" placeholder="Search by source or destination">
+        </div>
+        <table border="1" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Name</th><th>Source</th><th>Destination</th><th>Number</th><th>Passenger capacity</th>
+                </tr>
+            </thead>
+            <tbody class="tdata">
+            </tbody>
+        </table>
+    </div>
+    <script src="Question2.js"></script>
+</body>
+</html>

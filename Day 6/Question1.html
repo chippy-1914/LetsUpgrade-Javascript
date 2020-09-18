@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        .block1{
+            width:70%;
+            margin:auto auto;
+            background-color: blueviolet;
+            height:500px;
+            padding:20px;
+            text-align:center;
+        }
+        table {
+            width:100%;
+            margin:auto auto;
+            text-align:center;
+        }
+        th,td {
+            height:20px;
+            padding:5px;
+        }
+        .search {
+            height:30px;
+            text-indent:center;
+            margin-bottom:5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="block1">
+        <h1>Members</h1>
+        <br>
+        <input type="text" onkeyup="searchmember()" class="search" placeholder="Search by name or city">
+        <br/>
+        <table border="1" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Name</th><th>Age</th><th>City</th><th>Salary</th><th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="tdata">
+            </tbody>
+        </table>
+    </div>
+    <script src=Question1.js></script>
+    
+</body>
+</html>
